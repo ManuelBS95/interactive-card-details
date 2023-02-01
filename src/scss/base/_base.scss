@@ -1,0 +1,56 @@
+html,
+body {
+	font-family: var(--font-space);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.app {
+		position: relative;
+		width: 375px;
+		min-height: 100vh;
+
+		.bg-main {
+			z-index: -10;
+		}
+	}
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+}
+
+.card-back {
+	top: 4%;
+	right: 5%;
+}
+
+.card-front {
+	left: 5%;
+	top: 16%;
+}
+
+.card-container {
+	position: relative;
+	width: min-content;
+
+	.icon-logo {
+		position: absolute;
+		width: 55px;
+		left: 7%;
+		top: 9%;
+	}
+
+	.img-card {
+		width: 282px;
+		height: 160px;
+	}
+}
+
+.card-form {
+	margin-top: 50px;
+}
