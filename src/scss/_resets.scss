@@ -52,7 +52,18 @@ button {
 	padding-bottom: 10px;
 	width: 100%;
 	border: none;
+	border-radius: 8px;
 	background-color: var(--very-dark-violet);
 	color: var(--white);
 	cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+	h3 {
+		font-size: 28px;
+	}
+
+	h6 {
+		font-size: 14px;
+	}
 }

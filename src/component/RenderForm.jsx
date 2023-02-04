@@ -62,6 +62,7 @@ const FormDisplay = () => {
 								name="cardname"
 								className="form__input"
 								autoComplete="off"
+								placeholder="e.g. Jane Applessed"
 								value={values.cardname}
 								onChange={handleChange}
 								onBlur={handleBlur}
@@ -79,6 +80,7 @@ const FormDisplay = () => {
 								maxLength="16"
 								name="cardnumber"
 								className="form__input"
+								placeholder="e.g. 1234 5678 9123 0000"
 								value={values.cardnumber}
 								onChange={handleChange}
 								onBlur={handleBlur}
@@ -90,7 +92,7 @@ const FormDisplay = () => {
 							</div>
 						</div>
 						<div className="form__input__container">
-							<div className="grid-col">
+							<div className="form__input__label">
 								<h4>exp. date (mm/yy)</h4>
 								<h4>cvc</h4>
 							</div>
@@ -100,6 +102,7 @@ const FormDisplay = () => {
 									maxLength="2"
 									name="cardmonth"
 									className="form__input"
+									placeholder="MM"
 									value={values.cardmonth}
 									onChange={handleChange}
 									onBlur={handleBlur}
@@ -109,6 +112,7 @@ const FormDisplay = () => {
 									maxLength="2"
 									name="cardyear"
 									className="form__input"
+									placeholder="YY"
 									value={values.cardyear}
 									onChange={handleChange}
 									onBlur={handleBlur}
@@ -118,6 +122,7 @@ const FormDisplay = () => {
 									name="cardcvc"
 									maxLength="3"
 									className="form__input"
+									placeholder="e.g. 123"
 									value={values.cardcvc}
 									onChange={handleChange}
 									onBlur={handleBlur}
