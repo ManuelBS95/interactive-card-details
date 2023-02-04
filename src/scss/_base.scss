@@ -1,0 +1,105 @@
+.app {
+	width: 375px;
+	height: 100vh;
+	position: relative;
+
+	.form {
+		position: absolute;
+		width: 85%;
+		top: 331px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		.input-container {
+			display: grid;
+		}
+
+		.field-cvc {
+			grid-template-columns: 1fr 1fr 2fr;
+			gap: 10px;
+		}
+
+		.field {
+			margin-top: 5px;
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.error-container {
+			height: 21px;
+			margin-top: 2px;
+			margin-bottom: 9px;
+		}
+
+		.input-errors-display {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+	}
+}
+
+.text__white {
+	color: white;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex__row {
+	flex-direction: row;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+
+.flex__space__betwen {
+	justify-content: space-between;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.inline__block {
+	display: inline-block;
+}
+
+.card__image {
+	width: 285px;
+}
+
+.card__back__position {
+	top: 34px;
+	right: 16px;
+
+	.card__cvc {
+		top: 72px;
+		right: 37px;
+	}
+}
+
+.card__front__position {
+	top: 122px;
+	right: 73px;
+
+	.card__front__data {
+		width: 100%;
+		bottom: 22px;
+		padding-right: 20px;
+		padding-left: 20px;
+
+		.card__bin {
+			margin-bottom: 17px;
+		}
+	}
+}
