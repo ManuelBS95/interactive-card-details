@@ -55,54 +55,51 @@ const FormDisplay = () => {
 						onSubmit={handleSubmit}
 						onChange={handleOnChange}
 					>
-						<div className="input-container input-cardname">
+						<div className="form__input__container">
 							<h4>cardholder name</h4>
 							<input
 								type="text"
 								name="cardname"
-								className="field"
-								id="cardname"
+								className="form__input"
 								autoComplete="off"
 								value={values.cardname}
 								onChange={handleChange}
 								onBlur={handleBlur}
 							/>
-							<div className="error-container">
+							<div className="form__error__container">
 								{touched.cardname && errors.cardname && (
 									<h5>{errors.cardname}</h5>
 								)}
 							</div>
 						</div>
-						<div className="input-container input-cardmonth">
+						<div className="form__input__container">
 							<h4>cardholder number</h4>
 							<input
 								type="text"
 								maxLength="16"
 								name="cardnumber"
-								className="field"
-								id="cardnumber"
+								className="form__input"
 								value={values.cardnumber}
 								onChange={handleChange}
 								onBlur={handleBlur}
 							/>
-							<div className="error-container">
+							<div className="form__error__container">
 								{touched.cardnumber && errors.cardnumber && (
 									<h5>{errors.cardnumber}</h5>
 								)}
 							</div>
 						</div>
-						<div className="input-container input-cardmonthyearcvc">
+						<div className="form__input__container">
 							<div className="grid-col">
 								<h4>exp. date (mm/yy)</h4>
 								<h4>cvc</h4>
 							</div>
-							<div className="input-container field-cvc">
+							<div className="form__input__container form__input__mmyycvc">
 								<input
 									type="text"
 									maxLength="2"
 									name="cardmonth"
-									className="field"
-									id="cardmonth"
+									className="form__input"
 									value={values.cardmonth}
 									onChange={handleChange}
 									onBlur={handleBlur}
@@ -111,8 +108,7 @@ const FormDisplay = () => {
 									type="text"
 									maxLength="2"
 									name="cardyear"
-									className="field"
-									id="cardyear"
+									className="form__input"
 									value={values.cardyear}
 									onChange={handleChange}
 									onBlur={handleBlur}
@@ -121,20 +117,19 @@ const FormDisplay = () => {
 									type="text"
 									name="cardcvc"
 									maxLength="3"
-									className="field"
-									id="cardcvc"
+									className="form__input"
 									value={values.cardcvc}
 									onChange={handleChange}
 									onBlur={handleBlur}
 								/>
 							</div>
-							<div className="input-errors-display">
-								<div className="error-container">
+							<div className="form__input__container__mmyy">
+								<div className="form__error__container">
 									{touched.cardyear && errors.cardyear && (
 										<h5>{errors.cardyear}</h5>
 									)}
 								</div>
-								<div className="error-container">
+								<div className="form__error__container">
 									{touched.cardcvc && errors.cardcvc && (
 										<h5>{errors.cardcvc}</h5>
 									)}
