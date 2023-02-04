@@ -8,7 +8,7 @@ const Cards = () => {
 		<div className="cards">
 			<div className="card__container__back">
 				<div className="card__back">
-					<img className="card__image" src="/images/bg-card-back.png" />
+					<img className="card__image" src="images/bg-card-back.png" />
 					<div className="card__back__data">
 						<h6>{values.cardcvc == "" ? "000" : <>{values.cardcvc}</>}</h6>
 					</div>
@@ -16,7 +16,7 @@ const Cards = () => {
 			</div>
 			<div className="card__container__front">
 				<div className="card__front">
-					<img className="card__image" src="/images/bg-card-front.png" />
+					<img className="card__image" src="images/bg-card-front.png" />
 					<img className="card__logo" src={CardLogo} />
 					<div className="card__front__data">
 						<h3 className="card__front__bin">
